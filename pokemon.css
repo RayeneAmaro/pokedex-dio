@@ -1,0 +1,211 @@
+#corpoPokemon{
+    font-family: 'Roboto';
+}
+body,html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    padding-top: 2rem;
+    color: #fff;
+}
+
+.numero{
+    text-align: right;
+    opacity: .5;
+}
+
+.tipo{
+    filter: brightness(1.1);
+    width: 30%;
+    text-align: center;
+    border-radius: 50px;
+    font-size: .80rem;
+    list-style: none;
+    padding: 5px 0px;
+}
+
+.tipo {
+    margin-bottom: 5px;
+}
+
+.img{
+    max-width: 200px;
+    max-height: 200px;
+    position: absolute;
+    left: 20%;
+    top:-35%;
+    border-radius: 50px;
+}
+
+.menu{
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+
+.menu .lista-menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.lista-menu li {
+    font-size: .70rem;
+    text-align: center;
+    color: rgb(102, 102, 102);
+    padding:10px
+}
+
+.lista-menu li:first-child {
+    font-weight: 600;
+    color: #000;
+    font-size: .90rem;
+}
+
+.active{
+    border-bottom: 1px solid black;
+}
+
+
+table, ol, li, h1{
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}
+
+.nome{
+    text-transform: capitalize;
+    font-size: 3rem;
+    display: flex;
+}
+
+.descricao {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 6rem 1.5rem;
+    border-radius: 20px 20px 0px 0px;
+    position:  absolute;
+    box-sizing: border-box;
+    bottom: 0;
+}
+.descricao .lista-descricao{
+    list-style: none;
+}
+
+.questao{
+    padding-bottom: .5rem;
+    color: rgb(102, 102, 102);
+    font-size: .75rem;
+}
+
+.lista-descricao td:first-child{
+    padding-top: 1rem
+}
+
+.resposta{
+    color: #000;
+    font-weight: 500;
+    font-size: .75rem;
+    padding-left: 50px;
+    text-transform: capitalize;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+/* Cores - tipos */
+
+
+.normal { 
+    background-color: #a6a877
+}
+.grass { 
+    background-color: #77c850;
+}
+.fire { 
+    background-color: #ee7f30
+}
+.water { 
+    background-color: #678fee
+}
+.electric { 
+    background-color: #f7cf2e
+}
+.ice { 
+    background-color: #98d5d7
+}
+.ground { 
+    background-color: #dfbf69
+}
+.flying { 
+    background-color: #a98ff0
+}
+.poison { 
+    background-color: #a040a0
+}
+.fighting { 
+    background-color: #bf3029
+}
+.psychic { 
+    background-color: #f65687
+}
+.dark { 
+    background-color: #725847
+}
+.rock { 
+    background-color: #b8a137
+}
+.bug { 
+    background-color: #a8b720
+}
+.ghost { 
+    background-color: #6e5896
+}
+.steel { 
+    background-color: #b9b7cf
+}
+.dragon { 
+    background-color: #6f38f6
+}
+.fairy { 
+    background-color: #f9aec7
+}
+
+
+/* Telas */
+
+@media screen and (min-width: 500px){
+
+    .nome{
+        font-size: 4.5rem;
+    }
+
+    .tipo{
+        font-size: 1rem;
+    }
+
+    .img{
+        margin-left: 20vw;
+    }
+
+    .descricao{
+        max-width: 95vw;
+        margin-bottom: 10vh;
+        border-radius: 15px;
+        margin-left: 2.5rem;
+        margin-right: 10%;
+    }
+
+    .lista-descricao{
+        font-size: 1.2rem
+    }
+};
