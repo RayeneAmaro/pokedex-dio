@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/pokemon.css">
+
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Fonte roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <title>Pokemon - pokedex</title>
+    </head>
+    <body id="corpoPokemon" class="tiposCor">
+        <div class="header">
+            <h1 class="nome">{{nome}}</h1>
+            <p class="numero">{{numero}}</p>
+            <div class="tipo-div">
+                
+            </div>
+        </div>
+
+        
+        <section class="descricao">
+            <img src="{{imagem}}" alt="${json.name}" class="img">
+            <nav class="menu">
+                <ol class="lista-menu">
+                    <li class="active">About</li>
+                    <li>Base</li>
+                    <li>Evolution</li>
+                    <li>Moves</li>
+                </ol>
+            </nav>
+            
+                <table class="lista-descricao">
+                    <tr>
+                        <td class="questao">Species:</td>
+                        <td class="resposta">{{species}}</td>
+                    </tr>
+                    <tr>
+                        <td class="questao">Height:</td>
+                        <td class="resposta">{{height}}</td>
+                    </tr>
+                    <tr>
+                        <td class="questao">Weight: </td>
+                        <td class="resposta">{{weight}}</td>
+                    </tr>
+                    <tr>
+                        <td class="questao">Abilities: </td>
+                        <td class="resposta ability">{{ability}}</td>
+                    </tr>
+                </table>
+
+        </section>
+
+    </body>
+    <script src="./js/pokemon.js"></script>
+</html>
